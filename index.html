@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" /><title>Black History Facts</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+   
+</head>
   <body>
     <div class="container">
       <header>
@@ -15,7 +21,7 @@
           <form id="fact-generator">
             <input
               type="text"
-              placeholder="Enter any day of the year and learn all of the Black History Facts that happened on this day"
+              placeholder="Enter any date and learn  Black History Facts"
               autofocus
               required
               autocomplete="off"
@@ -25,8 +31,8 @@
             />
             <input type="submit" class="submit-button" />
           </form>
-          <div class="hint">i.e January 1, 1863, 12/04/1969, Aug 28, 1963</div>
-          <div class="fact hidden"id="fact">
+          <div class="hint">i.e January 1, 1863, 12/04/1969, Aug 28, 1963, June 4</div>
+          <div class="fact hidden blink"id="fact">
 
             <br />
 
@@ -36,6 +42,7 @@
         </div>
         <div>
       <footer>This webpage was code by Maya Claros</footer>
+        <script src="src/index.js"></script>
     </div>
 
 </html>
